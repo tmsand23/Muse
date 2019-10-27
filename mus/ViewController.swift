@@ -318,8 +318,7 @@ class ViewController: NSViewController {
         
         a.beginSheetModal(for: self.view.window!, completionHandler: { (modalResponse) -> Void in
             if modalResponse == NSApplication.ModalResponse.alertFirstButtonReturn {
-                //Bug: crashes whiile song is playing Status: fixed??
-                //data had to be reloaded
+                
                self.tableView.reloadData()
                self.data.remove(at: row)
                 
