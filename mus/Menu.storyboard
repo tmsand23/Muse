@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="Hg0-rL-yoc">
+            <objects>
+                <windowController storyboardIdentifier="Menu" id="PJh-p1-Kqj" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="f5v-BP-UWn">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="200" height="80"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+                        <connections>
+                            <outlet property="delegate" destination="PJh-p1-Kqj" id="YwY-XE-Emd"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="8xU-FC-elG" kind="relationship" relationship="window.shadowedContentViewController" id="xC3-eL-Moq"/>
+                    </connections>
+                </windowController>
+                <customObject id="OdD-8X-hh9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10" y="-207"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kue-WM-72N">
+            <objects>
+                <viewController id="8xU-FC-elG" customClass="ViewController" customModule="mus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="92l-Xf-BpY">
+                        <rect key="frame" x="0.0" y="0.0" width="141" height="67"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="te0-d6-Q29">
+                                <rect key="frame" x="20" y="19" width="81" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sNU-F6-MNZ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="delete:" target="OM6-HK-95L" id="mhx-ln-IOv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="delete" destination="te0-d6-Q29" id="91d-7M-M8B"/>
+                    </connections>
+                </viewController>
+                <customObject id="OM6-HK-95L" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="667.5" y="-238.5"/>
+        </scene>
+    </scenes>
+</document>

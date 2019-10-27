@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "52fd147a4d545692c2d5a21d4261d1cd"
+build_time: [1572110650, 47735000]
+inputs:
+  "/Users/root1/swift/mus/mus/ViewController.swift": [1572104932, 622135996]
+  "/Users/root1/swift/mus/mus/AppDelegate.swift": [1560488186, 841092441]
